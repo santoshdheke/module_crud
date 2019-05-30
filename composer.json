@@ -1,0 +1,19 @@
+{
+  "name": "ssgroup/mkcrud",
+  "description": "crud maker",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "santosh",
+      "email": "santoshdheke46@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "SsGroup\\MkCrud\\": "src/"
+    }
+  }
+}
