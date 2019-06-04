@@ -11,6 +11,13 @@
   ],
   "minimum-stability": "dev",
   "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SsGroup\\MkCrud\\MakeCrudServiceProvider"
+      ]
+    }
+  },
   "autoload": {
     "psr-4": {
       "SsGroup\\MkCrud\\": "src/"
