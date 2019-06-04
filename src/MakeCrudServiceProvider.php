@@ -19,7 +19,7 @@ class MakeCrudServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerProviders();
-        $this->commands($this->cmd());
+//        $this->commands($this->cmd());
     }
 
     public function cmd()
