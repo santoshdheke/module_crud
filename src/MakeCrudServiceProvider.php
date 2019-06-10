@@ -96,8 +96,8 @@ class MakeCrudServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes($module)
     {
-        \Route::prefix('api/'.strtolower($module))
-            ->namespace($this->namespace . $module . '\\Api\\Controller')
+        \Route::prefix('api/')
+            ->namespace($this->namespace . $module . '\\ApiController')
             ->group(base_path('Module/' . $module . '/route/api.php'));
     }
 
