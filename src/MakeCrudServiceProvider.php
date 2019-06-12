@@ -56,7 +56,7 @@ class MakeCrudServiceProvider extends ServiceProvider
 
             if (is_dir($module)) {
                 $this->loadViewsFrom($module . '/view', $m);
-                $this->mergeConfigFrom($module . '/config/app.php', strtolower($m));
+//                $this->mergeConfigFrom($module . '/config/app.php', strtolower($m));
             }
         }
     }
