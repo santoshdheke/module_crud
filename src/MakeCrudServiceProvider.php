@@ -80,7 +80,7 @@ class MakeCrudServiceProvider extends ServiceProvider
      */
     protected function mapAuthRoutes($module)
     {
-        \Route::middleware(['web','auth:'.strtolower($module)])
+        \Route::middleware(['web','auth'])
             ->namespace($this->namespace . $module . '\\Controller')
             ->group(base_path('Module/' . $module . '/route/auth.php'));
     }
