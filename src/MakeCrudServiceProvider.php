@@ -68,9 +68,7 @@ class MakeCrudServiceProvider extends ServiceProvider
      */
     protected function mapPublicRoutes($module)
     {
-        \Route::prefix(strtolower($module))
-            ->as(strtolower($module).'.')
-            ->middleware('web')
+        \Route::middleware('web')
             ->namespace($this->namespace . $module . '\\Controller')
             ->group(base_path('Module/' . $module . '/route/public.php'));
     }
